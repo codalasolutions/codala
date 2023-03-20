@@ -42,6 +42,7 @@ header {
 
 main {
   padding-top: var(--header-height);
+  overflow: hidden;
 }
 
 #home {

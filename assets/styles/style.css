@@ -2,6 +2,7 @@
 
 :root {
   --header-height: 80px;
+  --primary-color: rgb(52, 28, 88);
 }
 
 section {
@@ -34,7 +35,7 @@ header {
 }
 
 #logo h3 {
-  color: rgb(52, 28, 88);
+  color: var(--primary-color);
   position: absolute;
   bottom: 0;
   left: 25px;
@@ -47,12 +48,12 @@ main {
 
 #home {
   padding-block-start: 0;
-  background-image: linear-gradient(rgb(52, 28, 88), white);
+  background-image: linear-gradient(var(--primary-color), white);
   color: white;
 }
 
 #home h2 {
-  color: white;
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
@@ -111,6 +112,11 @@ main {
   text-align: center;
 }
 
+#about > .list > .item > p > span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 #contact {
   background-color: rgb(246 246 246);
 }
@@ -149,7 +155,7 @@ footer {
 button {
   background-color: rgb(212 215 219);
   border-radius: 2rem;
-  color: rgb(26, 26, 26);
+  color: var(--primary-color);
   padding: 0.75rem 2rem;
   text-decoration: none;
   font-weight: 700;
@@ -159,7 +165,7 @@ input,
 textarea {
   border: none;
   border-radius: 4px;
-  box-shadow: 0 0 4px rgb(52, 28, 88);
+  box-shadow: 0 0 4px var(--primary-color);
   padding: 0.75rem;
   resize: vertical;
 }
@@ -167,7 +173,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid rgb(52, 28, 88);
+  border: 1px solid var(--primary-color);
 }
 
 label {
